@@ -78,6 +78,7 @@ Content-Type: application/json
   "fundsUtilized": 50000
 }
 ```
+- ![alt text](./images/image.png)
 
 ### Upload CSV (Async)
 ```http
@@ -86,16 +87,19 @@ Content-Type: multipart/form-data
 
 file: [CSV file]
 ```
+- ![alt text](/images/image-uploadcsv.png)
 
 ### Get Job Status
 ```http
 GET /job-status/:jobId
 ```
+- ![alt text](image.png)
 
 ### Dashboard Aggregation
 ```http
 GET /dashboard?month=YYYY-MM
 ```
+- ![alt text](./images/image-dashboard.png)
 
 ## 📄 CSV Format
 
