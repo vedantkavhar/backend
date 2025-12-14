@@ -11,8 +11,17 @@ const job = require("./routes/job");
 
 const cors = require("cors");
 
+
+
 // middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://web-frontend-two-azure.vercel.app"
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // routes
