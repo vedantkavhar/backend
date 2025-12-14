@@ -17,7 +17,8 @@ const cors = require("cors");
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://web-frontend-two-azure.vercel.app"
+    "https://web-frontend-two-azure.vercel.app",
+    "https://web-frontend-vedant-sanjay-kavhars-projects.vercel.app"
   ],
   credentials: true
 }));
