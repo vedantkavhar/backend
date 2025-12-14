@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "850b52a9-5e65-4451-b367-87834ab6f68b",
+    "name": "apis",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/job-status/7f67ab53-808a-419d-b745-2c6116ba60ab",
+      "id": "481b806a-8af5-42c6-8f22-e829d27e47d7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7777/job-status/7f67ab53-808a-419d-b745-2c6116ba60ab",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7777",
+          "path": [
+            "job-status",
+            "7f67ab53-808a-419d-b745-2c6116ba60ab"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/reports/upload",
+      "id": "7fc01be8-df23-492e-b732-159c2fa452b8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:7777/reports/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7777",
+          "path": [
+            "reports",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/report",
+      "id": "78b1c7c0-dfb9-4c4c-9bf6-25ab94ae505c",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"ngoId\": \"NGO_003\",\r\n  \"month\": \"2025-08\",\r\n  \"peopleHelped\": 200,\r\n  \"eventsConducted\": 6,\r\n  \"fundsUtilized\": 90000\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7777/report",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7777",
+          "path": [
+            "report"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:7777/dashboard",
+      "id": "9a7e735b-c29b-4e71-9ce2-a1fb516343d4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7777/dashboard?month=2025-08",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7777",
+          "path": [
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "month",
+              "value": "2025-08"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
