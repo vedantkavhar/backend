@@ -93,7 +93,7 @@ file: [CSV file]
 ```http
 GET /job-status/:jobId
 ```
-- ![alt text](image.png)
+- ![alt text](./images/image-jobStatus.png)
 
 ### Dashboard Aggregation
 ```http
